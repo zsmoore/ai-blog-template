@@ -12,7 +12,7 @@ Create .env.local and add the following values
 - `NEXT_PUBLIC_WEBSITE_TITLE` - Title for your site enclosed in `"`
 - `NEXT_PUBLIC_WEBSITE_SUBTITLE` - Subtitle for your site to be displayed on homepage enclosed in `"`
   
-Change name in package.json and package-lock.json from ai-blog-template to your project name.
+Change name in package.json and package-lock.json from ai-blog-template to your project name.  
 Change share url in components/share.tsx to your website's url.
   
 Deploy to vercel and make sure to include the same environment variables.
