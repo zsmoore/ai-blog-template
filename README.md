@@ -1,7 +1,17 @@
-## On This Day In History
+## AI Blog Template
 
-### [ai-historian-blog](https://ai-historian-blog.com)
+### What? A template for a next js site that hooks into notion db for pulling blog posts
 
-Frontend for an AI powered history blog.
+Use in partnership with [ai-blog-ingestion-template](https://github.com/zsmoore/ai-blog-ingestion-template) to populate posts.
+  
+### How to setup?
 
-We connect to notion as a DB to pull published articles created using openAI API from [ai-historian-blog-ingestion](https://github.com/zsmoore/ai-historian-blog-ingestion) running on azure daily
+Create .env.local and add the following values
+- `NOTION_TOKEN` - Notion API Key
+- `DATABASE_ID` - Notion Database ID to pull from
+- `NEXT_PUBLIC_WEBSITE_TITLE` - Title for your site enclosed in `"`
+- `NEXT_PUBLIC_WEBSITE_SUBTITLE` - Subtitle for your site to be displayed on homepage enclosed in `"`
+  
+Deploy to vercel and make sure to include the same environment variables.
+  
+*PreReq* Sign up for notion.  Get an API Key.  Create a page which is a basic DB. Grab your key and DB id.
