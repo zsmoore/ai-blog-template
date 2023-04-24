@@ -29,7 +29,7 @@ const PostCard = (props: PostCardProps) => {
         </div>
       </div>
       { props.post.cover
-          ? (<div className="sm:w-1/3 relative">
+          ? (<div className="w-1/3 relative">
               <Image className="object-scale-down py-4 sm:py-6"
               src={props.post.cover}
               alt="Cover Image"
